@@ -1,16 +1,28 @@
-export const formatCurrency = (amount, symbol = '$') => {
+export const formatCurrency = (amount, symbol = '₹') => {
   const num = Number(amount) || 0;
-  return `${symbol}${num.toLocaleString('en-US', {
+  return `${symbol}${num.toLocaleString('en-IN', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   })}`;
 };
 
+export const formatCurrencyINR = (amount) => {
+  return formatCurrency(amount, '₹');
+};
+
+export const isValidIndianPhone = (phone) => {
+  if (!phone) return false;
+  const cleaned = phone.replace(/[\s-]/g, '');
+  // Matches +91XXXXXXXXXX or 10-digit number starting with 6, 7, 8, 9
+  return /^(\+91)?[6789]\d{9}$/.test(cleaned);
+};
+
+
 export const formatDate = (dateString) => {
   if (!dateString) return 'N/A';
   const d = new Date(dateString);
   if (isNaN(d.getTime())) return 'N/A';
-  return d.toLocaleDateString('en-US', {
+  return d.toLocaleDateString('en-IN', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
@@ -21,7 +33,7 @@ export const formatDateTime = (dateString) => {
   if (!dateString) return 'N/A';
   const d = new Date(dateString);
   if (isNaN(d.getTime())) return 'N/A';
-  return d.toLocaleString('en-US', {
+  return d.toLocaleString('en-IN', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',

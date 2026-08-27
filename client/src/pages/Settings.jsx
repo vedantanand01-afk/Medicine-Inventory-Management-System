@@ -22,9 +22,9 @@ const Settings = () => {
     address: '',
     phone: '',
     email: '',
-    currency: 'USD ($)',
-    currencySymbol: '$',
-    taxRate: 0,
+    currency: 'INR (₹)',
+    currencySymbol: '₹',
+    taxRate: 5.0,
     defaultReorderLevel: 20,
     expiryWarningDays: 30,
   });

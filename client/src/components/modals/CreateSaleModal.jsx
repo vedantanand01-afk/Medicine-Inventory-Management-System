@@ -215,7 +215,7 @@ const CreateSaleModal = ({
               type="text"
               value={customerName}
               onChange={(e) => setCustomerName(e.target.value)}
-              placeholder="e.g. John Doe"
+              placeholder="e.g. Rahul Sharma"
               className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
           </div>
@@ -229,7 +229,7 @@ const CreateSaleModal = ({
               type="text"
               value={customerPhone}
               onChange={(e) => setCustomerPhone(e.target.value)}
-              placeholder="e.g. +1 (555) 000-0000"
+              placeholder="e.g. +91 98765 43210"
               className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
           </div>
@@ -255,7 +255,7 @@ const CreateSaleModal = ({
 
           <div>
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-              Unit Price ($)
+              Unit Price (₹)
             </label>
             <input
               type="number"
@@ -274,7 +274,7 @@ const CreateSaleModal = ({
           <div>
             <p className="text-xs font-medium text-slate-400">Total Billable Amount</p>
             <p className="text-xs text-emerald-400 mt-0.5">
-              {qtyNum} unit(s) @ ${unitPriceNum.toFixed(2)} / unit
+              {qtyNum} unit(s) @ {formatCurrency(unitPriceNum)} / unit
             </p>
           </div>
           <div className="text-right">

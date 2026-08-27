@@ -132,7 +132,7 @@ const InvoiceModal = ({ isOpen, onClose, transaction }) => {
               </div>
               <div className="flex justify-between text-slate-600">
                 <span>Tax / GST (0%):</span>
-                <span>$0.00</span>
+                <span>{formatCurrency(0)}</span>
               </div>
               <div className="flex justify-between font-extrabold text-sm text-slate-900 pt-2 border-t border-slate-200">
                 <span>Grand Total:</span>

@@ -341,7 +341,7 @@ const AddMedicineModal = ({
           {/* Unit Selling Price */}
           <div>
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-              Unit Selling Price ($) *
+              Unit Selling Price (₹) *
             </label>
             <input
               type="number"
@@ -359,7 +359,7 @@ const AddMedicineModal = ({
           {/* Cost Price */}
           <div>
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-              Cost / Purchase Price ($)
+              Cost / Purchase Price (₹)
             </label>
             <input
               type="number"

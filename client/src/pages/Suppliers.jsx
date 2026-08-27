@@ -19,7 +19,7 @@ import {
   ExternalLink,
   Download,
 } from 'lucide-react';
-import { formatDate } from '../utils/formatters';
+import { formatDate, formatCurrency } from '../utils/formatters';
 import { exportToCSV } from '../utils/exportUtils';
 
 const Suppliers = () => {
@@ -367,7 +367,7 @@ const Suppliers = () => {
                             {m.stock?.quantity || 0} Units
                           </span>
                           <span className="text-[10px] text-slate-400">
-                            ${m.unitPrice?.toFixed(2)}
+                            {formatCurrency(m.unitPrice)}
                           </span>
                         </div>
                       </div>

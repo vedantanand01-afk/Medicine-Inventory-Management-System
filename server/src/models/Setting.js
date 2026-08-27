@@ -14,27 +14,27 @@ const settingSchema = new mongoose.Schema(
     },
     address: {
       type: String,
-      default: '104 Healthcare Boulevard, Medical District, NY 10001',
+      default: '104 Healthcare Bhavan, Medical Enclave, Bandra West, Mumbai, Maharashtra 400050',
       trim: true,
     },
     phone: {
       type: String,
-      default: '+1 (555) 234-5678',
+      default: '+91 98200 12345',
       trim: true,
     },
     email: {
       type: String,
-      default: 'support@apexmedicare.com',
+      default: 'support@apexmedicare.in',
       trim: true,
     },
     currency: {
       type: String,
-      default: 'USD ($)',
+      default: 'INR (₹)',
       trim: true,
     },
     currencySymbol: {
       type: String,
-      default: '$',
+      default: '₹',
       trim: true,
     },
     taxRate: {

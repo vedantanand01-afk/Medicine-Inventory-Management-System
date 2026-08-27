@@ -11,12 +11,12 @@ exports.getSettings = async (req, res, next) => {
       settings = await Setting.create({
         pharmacyName: 'Apex MediCare Pharmacy',
         tagline: 'Healthcare & Medicine Inventory Management',
-        address: '104 Healthcare Boulevard, Medical District, NY 10001',
-        phone: '+1 (555) 234-5678',
-        email: 'support@apexmedicare.com',
-        currency: 'USD ($)',
-        currencySymbol: '$',
-        taxRate: 0,
+        address: '104 Healthcare Bhavan, Medical Enclave, Bandra West, Mumbai, Maharashtra 400050',
+        phone: '+91 98200 12345',
+        email: 'support@apexmedicare.in',
+        currency: 'INR (₹)',
+        currencySymbol: '₹',
+        taxRate: 5.0,
         defaultReorderLevel: 20,
         expiryWarningDays: 30,
       });

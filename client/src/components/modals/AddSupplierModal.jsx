@@ -109,7 +109,7 @@ const AddSupplierModal = ({
             name="supplierName"
             value={formData.supplierName}
             onChange={handleChange}
-            placeholder="e.g. Pfizer Wholesale Corp"
+            placeholder="e.g. Sun Pharma Distribution India"
             required
             className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
           />
@@ -125,7 +125,7 @@ const AddSupplierModal = ({
             name="contactPerson"
             value={formData.contactPerson}
             onChange={handleChange}
-            placeholder="e.g. David Miller"
+            placeholder="e.g. Rajesh Sharma"
             className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
           />
         </div>
@@ -141,7 +141,7 @@ const AddSupplierModal = ({
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="e.g. +1 (555) 019-2834"
+              placeholder="e.g. +91 98201 11001"
               required
               className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
@@ -157,7 +157,7 @@ const AddSupplierModal = ({
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="e.g. orders@supplier.com"
+              placeholder="e.g. orders@sunpharma-dist.in"
               required
               className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
@@ -174,7 +174,7 @@ const AddSupplierModal = ({
             value={formData.address}
             onChange={handleChange}
             rows="2"
-            placeholder="e.g. 235 East 42nd St, New York, NY 10017"
+            placeholder="e.g. Plot 45, MIDC Industrial Area, Andheri East, Mumbai 400093"
             required
             className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
           />

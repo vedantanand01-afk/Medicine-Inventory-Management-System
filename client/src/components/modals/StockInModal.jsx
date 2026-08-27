@@ -3,6 +3,7 @@ import Modal from '../common/Modal';
 import api from '../../services/api';
 import { useNotification } from '../../context/NotificationContext';
 import { PlusCircle, Truck } from 'lucide-react';
+import { formatCurrency } from '../../utils/formatters';
 
 const StockInModal = ({
   isOpen,
@@ -171,7 +172,7 @@ const StockInModal = ({
           {/* Unit Cost */}
           <div>
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-              Unit Purchase Cost ($)
+              Unit Purchase Cost (₹)
             </label>
             <input
               type="number"
@@ -223,7 +224,7 @@ const StockInModal = ({
           <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/60 flex items-center justify-between text-xs">
             <span className="font-semibold text-slate-600">Total Shipment Value:</span>
             <span className="text-base font-extrabold text-slate-800">
-              ${(Number(quantity) * Number(unitCost)).toFixed(2)}
+              {formatCurrency(Number(quantity) * Number(unitCost))}
             </span>
           </div>
         )}

@@ -77,9 +77,9 @@ const Reports = () => {
         'Supplier',
         'Batch #',
         'Quantity',
-        'Unit Price ($)',
-        'Cost Price ($)',
-        'Total Valuation ($)',
+        'Unit Price (₹)',
+        'Cost Price (₹)',
+        'Total Valuation (₹)',
         'Status',
       ];
       const rows = inventoryData.items.map((i) => [
@@ -101,8 +101,8 @@ const Reports = () => {
         'Date & Time',
         'Medicine Name',
         'Quantity Sold',
-        'Unit Price ($)',
-        'Total Revenue ($)',
+        'Unit Price (₹)',
+        'Total Revenue (₹)',
         'Customer Name',
         'Staff User',
       ];
@@ -124,8 +124,8 @@ const Reports = () => {
         'Movement Type',
         'Medicine Name',
         'Quantity',
-        'Unit Price ($)',
-        'Total Value ($)',
+        'Unit Price (₹)',
+        'Total Value (₹)',
         'Party',
       ];
       const rows = movementData.transactions.map((t) => [
@@ -148,8 +148,8 @@ const Reports = () => {
         'Batch #',
         'Expiry Date',
         'Units in Stock',
-        'Unit Price ($)',
-        'Valuation at Risk ($)',
+        'Unit Price (₹)',
+        'Valuation at Risk (₹)',
         'Days Remaining',
       ];
       const rows = [

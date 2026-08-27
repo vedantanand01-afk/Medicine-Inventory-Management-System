@@ -328,7 +328,7 @@ const Users = () => {
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, name: e.target.value }))
               }
-              placeholder="e.g. Dr. Arthur Vance"
+              placeholder="e.g. Dr. Amit Sharma"
               required
               className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
@@ -410,7 +410,7 @@ const Users = () => {
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, phone: e.target.value }))
               }
-              placeholder="+1 (555) 000-0000"
+              placeholder="+91 98765 43210"
               className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
           </div>
